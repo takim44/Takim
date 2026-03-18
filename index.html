@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NRX Coin Mining & Trading Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="badge">NRX Blockchain Ecosystem</p>
+      <h1>NRX Coin Mining Platform & Instant Payment Website</h1>
+      <p class="hero__text">
+        A future-ready concept where users can invest, join daily pools, trade NRX coin,
+        and transfer funds to other users in near real-time.
+      </p>
+      <div class="hero__actions">
+        <a href="#plans" class="btn btn--primary">Explore Plans</a>
+        <a href="#features" class="btn btn--secondary">View Features</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="plans" class="card-grid section">
+      <article class="card">
+        <h2>$1000 Investment Plan</h2>
+        <p>Users can start from a flagship <strong>$1000</strong> investment package for NRX mining and growth participation.</p>
+      </article>
+      <article class="card">
+        <h2>$50 Daily Pool</h2>
+        <p>Each user contributes <strong>$50/day</strong> to a dynamic reward pool that can be distributed transparently.</p>
+      </article>
+      <article class="card">
+        <h2>NRX Trading Access</h2>
+        <p>Users can trade NRX coin directly inside the platform with live market movement indicators.</p>
+      </article>
+    </section>
+
+    <section id="features" class="section">
+      <h2 class="section__title">Platform Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Live NRX Price Movement</h3>
+          <p>Coin price updates continuously to show up/down momentum for active traders.</p>
+          <div class="ticker" aria-live="polite">
+            <span class="ticker__label">NRX/USD</span>
+            <span id="nrxPrice" class="ticker__price">$1.000</span>
+            <span id="nrxTrend" class="ticker__trend">▲ 0.00%</span>
+          </div>
+        </div>
+        <div class="feature">
+          <h3>Instant User-to-User Payments</h3>
+          <p>Transfer from one user wallet to another with an "instant settle" flow (0-second target experience).</p>
+          <form id="transferForm" class="transfer-form">
+            <label>
+              Sender ID
+              <input required type="text" name="sender" placeholder="user_1001" />
+            </label>
+            <label>
+              Receiver ID
+              <input required type="text" name="receiver" placeholder="user_2030" />
+            </label>
+            <label>
+              Amount (USD)
+              <input required type="number" min="1" name="amount" placeholder="50" />
+            </label>
+            <button type="submit" class="btn btn--primary">Send Instantly</button>
+          </form>
+          <p id="transferResult" class="transfer-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section disclaimer">
+      <h2>Important Note</h2>
+      <p>
+        This is a demo concept website for NRX coin platform planning. Before real launch, implement legal compliance,
+        KYC/AML, audited smart contracts, secure custody, and licensed payment rails.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 NRX Coin Platform Concept</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
