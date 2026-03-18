@@ -1,0 +1,158 @@
+:root {
+  --bg: #0b1022;
+  --panel: #151d3b;
+  --text: #ecf0ff;
+  --muted: #adb8e6;
+  --primary: #5eead4;
+  --secondary: #8ea3ff;
+  --up: #34d399;
+  --down: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #090d1b, #101736);
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 5rem 1.25rem 3rem;
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(94, 234, 212, 0.15);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  color: var(--primary);
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.hero__text {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 0;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: #06271f;
+}
+
+.btn--secondary {
+  background: rgba(142, 163, 255, 0.18);
+  color: var(--text);
+  border: 1px solid rgba(142, 163, 255, 0.45);
+}
+
+.section {
+  width: min(1100px, 92vw);
+  margin: 0 auto 2.5rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card,
+.feature,
+.disclaimer {
+  background: rgba(21, 29, 59, 0.85);
+  border: 1px solid rgba(173, 184, 230, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.ticker {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  background: #0b1022;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.ticker__label {
+  color: var(--muted);
+}
+
+.transfer-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input {
+  border: 1px solid rgba(173, 184, 230, 0.35);
+  background: #101736;
+  color: var(--text);
+  border-radius: 0.5rem;
+  padding: 0.55rem;
+}
+
+.transfer-result {
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1rem;
+  border-top: 1px solid rgba(173, 184, 230, 0.2);
+}
